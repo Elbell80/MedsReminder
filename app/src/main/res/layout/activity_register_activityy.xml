@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".RegisterActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+
+        >
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/my_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#F44366"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            android:isScrollContainer="true"
+
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_register_activityy" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fname"
+        android:drawableLeft="@drawable/fname"
+        android:hint="Full Name"
+        android:layout_marginTop="110dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:background="@drawable/edittext_rounded"
+        android:textColorHint="#C0C0C0"
+        android:inputType="textPersonName"
+
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/email"
+        android:hint="Email"
+        android:drawableLeft="@drawable/email"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:background="@drawable/edittext_rounded"
+        android:textColorHint="#C0C0C0"
+        android:inputType="textEmailAddress"
+        android:layout_below="@+id/fname"
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password"
+        android:drawableLeft="@drawable/password"
+        android:layout_below="@+id/email"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="40dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:background="@drawable/edittext_rounded"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColorHint="#C0C0C0"
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/confpassword"
+        android:drawableLeft="@drawable/password"
+        android:layout_below="@+id/password"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="40dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:background="@drawable/edittext_rounded"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:textColorHint="#C0C0C0"
+
+        />
+
+
+
+    <Button
+        android:id="@+id/Register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_below="@+id/confpassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/btnshap"
+        android:paddingTop="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="#A2B6AB"
+        />
+
+
+
+</RelativeLayout>

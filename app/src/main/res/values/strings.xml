@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">realmdb</string>
+    <string name="title_activity_register_activityy">RegisterActivityy</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_reminder">Reminder</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string-array name="timings">
+        <item>Once a day</item>
+        <item>Twice a day</item>
+        <item>Three times a day</item>
+    </string-array>
+
+    <string-array name="medtype">
+        <item>tablets</item>
+        <item>drops</item>
+        <item>spoons</item>
+
+    </string-array>
+</resources>

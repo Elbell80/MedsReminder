@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#FFEBEE"
+    >
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/RelativeLayout">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+
+            >
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/my_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/colorPrimary"
+                android:elevation="4dp"
+                android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+                android:isScrollContainer="true"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <TextView
+            android:id="@+id/enterName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter the name of medicine"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textSize="@dimen/fab_margin"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="#000000"
+            />
+
+        <EditText
+            android:id="@+id/FullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/enterName"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:hint="e.g. Paracetamol"
+            android:background="@drawable/edittext_rounded"
+            android:inputType="textPersonName"
+            />
+
+        <TextView
+            android:id="@+id/enterAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dosage"
+            android:layout_below="@+id/FullName"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:textSize="@dimen/fab_margin"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="#000000"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/enterAge"
+            android:id="@+id/linearlayoutt"
+            >
+
+            <EditText
+                android:id="@+id/editAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="0dp"
+                android:hint="e.g 1 tablet"
+                android:background="@drawable/edittext_rounded"
+                android:inputType="number"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner2"
+                android:background="@drawable/edittext_rounded"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/date"
+            android:text="Enter start date"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_gravity="left"
+            android:layout_below="@+id/linearlayoutt"
+            android:textSize="@dimen/fab_margin"
+            android:textColor="#000000"
+            />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Select date"
+            android:background="@drawable/edittext_rounded"
+            android:id="@+id/editdate"
+            android:layout_below="@+id/date"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="0dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginRight="5dp"
+            />
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/time"
+            android:text="Enter time"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_gravity="left"
+            android:layout_below="@+id/editdate"
+            android:textSize="@dimen/fab_margin"
+            android:textColor="#000000"
+
+            />
+
+       <!-- <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pick time"
+            android:background="@drawable/edittext_rounded"
+            android:id="@+id/editTime"
+            android:layout_below="@+id/time"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="3dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_gravity="left"
+            android:layout_alignParentLeft="true"
+
+            />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/addnewlinear"
+            android:layout_below="@+id/time">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Pick time"
+                android:background="@drawable/edittext_rounded"
+                android:id="@+id/editTime"
+
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="3dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_gravity="left"
+                android:layout_alignParentLeft="true"
+
+                />
+
+        </LinearLayout>
+
+
+        <!--<EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pick time"
+            android:background="@drawable/edittext_rounded"
+            android:id="@+id/addnew"
+            android:layout_below="@+id/editTime"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="3dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_gravity="left"
+            android:layout_alignParentLeft="true"
+
+            />-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/addtime"
+            android:text="Add time"
+            android:background="@color/colorPrimary"
+            android:layout_below="@+id/addnewlinear"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textSize="@dimen/fab_margin"
+            android:textColor="#000000"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"/>
+
+
+
+
+        <TextView
+            android:id="@+id/enterWeight"
+            android:inputType="textMultiLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:layout_below="@+id/addtime"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:textSize="@dimen/fab_margin"
+            android:textColor="#000000"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+
+            />
+
+        <EditText
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/enterWeight"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="3dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:hint="eg. for headache"
+            android:background="@drawable/edittext_rounded"
+            android:inputType="textPersonName" />
+
+
+
+
+
+
+
+
+        <!--<TimePicker
+            android:id="@+id/timePicker"
+            android:layout_width="313dp"
+            android:layout_height="342dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_alignTop="@+id/reminder"
+            android:layout_centerHorizontal="true"
+            android:theme="@style/AppTheme"
+            android:layout_below="@+id/description"
+            />-->
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_save"
+            android:text="Continue"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/description"
+            android:background="@drawable/btnshap"
+            android:layout_marginTop="10dp"
+
+            />
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

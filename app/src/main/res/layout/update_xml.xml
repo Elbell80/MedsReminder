@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter name" />
+
+    <EditText
+        android:id="@+id/editdosage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter dosage" />
+
+    <EditText
+        android:id="@+id/editdesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter description" />
+
+
+    <EditText
+        android:id="@+id/edithr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter hour" />
+
+    <EditText
+        android:id="@+id/editmins"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter minutes" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonUpdateRecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Update" />
+
+        <Button
+            android:id="@+id/buttonDeleteRecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Delete" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
